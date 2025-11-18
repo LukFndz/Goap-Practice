@@ -9,6 +9,7 @@ public class MineCoinsBasicAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Mining coins with Basic Pickaxe!");
     }
 
     protected override void SetUpPreconditionsAndEffects()

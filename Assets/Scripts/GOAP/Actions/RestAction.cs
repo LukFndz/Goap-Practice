@@ -7,6 +7,7 @@ public class RestAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Resting to recover stamina!");
     }
 
     protected override void SetUpPreconditionsAndEffects()

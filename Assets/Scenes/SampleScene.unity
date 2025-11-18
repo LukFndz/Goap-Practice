@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 529804487}
   - component: {fileID: 529804486}
   m_Layer: 5
-  m_Name: final ia2
+  m_Name: TXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1573,13 +1573,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'FINAL DE IA2
+  m_text: 'Goap Practice
 
-    Federico Botta
-
-    Diego Katabian
-
-    Luca Fernandez'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1613,8 +1609,8 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3985,7 +3981,7 @@ GameObject:
   - component: {fileID: 1604132704}
   - component: {fileID: 1604132703}
   m_Layer: 5
-  m_Name: reglas
+  m_Name: Rules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4031,12 +4027,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Reglas\n\nEl Goal State es:\nbrokenHouse = false\ngold = 10\n\n-Para reparar
-    la casa se necesita el Hammer.\n\n-Para minar oro se necesita alguna Pickaxe.\n\n-Todas
-    las acciones consumen un Stamina fijo y un Stamina porcentual, excepto Rest que
-    la regenera.\n\n-Para descansar se necesita que la casa est\xE9 reparada.\n\n-Al
-    cumplir con el goal state, el agente se queda en idle.\n\n-Si cambias los costos
-    de las acciones Basic y Pro, se puede ver como el agente cambia su preferencia.\n"
+  m_text: "The Goal State is:\n\t* brokenHouse = false\n\t* gold = 10\n\nTo repair
+    the house you need the Hammer.\n\nTo mine gold you need some Pickaxe.\n\nAll
+    actions consume a fixed Stamina amount and a percentage-based Stamina cost, except
+    Rest, which regenerates it.\n\nTo rest, the house must be repaired.\n\nWhen the
+    goal state is met, the agent stays idle.\n\nIf you change the action costs of
+    Basic and Pro, you can see how the agent changes its preference."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

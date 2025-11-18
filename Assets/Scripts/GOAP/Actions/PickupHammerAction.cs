@@ -7,6 +7,7 @@ public class PickupHammerAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Picking up a Hammer!");
     }
 
     protected override void SetUpPreconditionsAndEffects()

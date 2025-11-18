@@ -7,6 +7,7 @@ public class PickupPickaxeBasicAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Picking up a Basic Pickaxe!");
     }
 
     protected override void SetUpPreconditionsAndEffects()

@@ -7,6 +7,7 @@ public class RepairHouseAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Repairing the house!");
     }
 
     protected override void SetUpPreconditionsAndEffects()

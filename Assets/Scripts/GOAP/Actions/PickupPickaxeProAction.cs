@@ -7,6 +7,7 @@ public class PickupPickaxeProAction : GoapAction
     public override void ExecuteAction()
     {
         base.ExecuteAction();
+        Debug.Log("Picking up a Pro Pickaxe!");
     }
 
     protected override void SetUpPreconditionsAndEffects()
