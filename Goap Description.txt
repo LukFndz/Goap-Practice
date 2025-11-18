@@ -1,0 +1,57 @@
+					GOAP Preconditions and Effects Table
+
+					public class WorldState
+					{
+						float 	stamina;
+						bool	hashammer;
+						bool 	brokenHouse;
+						Tool 	tool;
+						int 	gold;
+					}
+
+					GoalState:
+						* brokenHouse = F
+						* gold = 10
+
+					All actions, in addition to their cost to the Goap, have a Stamina cost.
+					Here are example numbers, but they are not necessarily the same as in the Unity project.
+
+					------------------------------------------------------------------------------------------------------
+					TASK		|PRECONDITIONS			|EFFECTS				|COST 
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					get hammer	|hashammer = F			|hashammer = T		| 1
+							|stamina >= 10			|stamina -= 10		|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					repair		|hasHammer = T   		|brokenhouse = F	| 3
+					house		|stamina >= 20			|stamina -= 20		|	
+							|brokenHouse = T		|			|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					get tool	|tool = none 			|tool = basic 	 	| 2
+					 basic		|stamina >= 10 			|stamina -= 10		|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					get tool	|tool = basic			|tool = pro		| 4
+					pro     	|stamina >= 10			|stamina -= 10		|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					rest		|stamina < 10			|stamina = 100		| 4
+							|brokenHouse = F		|			|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					mine coins	|				|coins += 2		| 2
+					basic		|tool = basic			|stamina -= 10		|
+							|stamina >= 10			|			|
+							|				|			|
+					------------------------------------------------------------------------------------------------------
+							|				|			|
+					mine coins	|				|coins += 5		| 1
+					pro		|tool = pro			|stamina -= 10		|
+							|stamina >= 10			|			|
